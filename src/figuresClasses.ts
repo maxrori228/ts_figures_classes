@@ -27,7 +27,7 @@ export class Triangle implements Figure {
     this.c = c;
 
     if (a <= 0 || b <= 0 || c <= 0) {
-      throw new Error('sides must be > 0');
+      throw new Error('Side length must be greater than 0');
     }
 
     const max = Math.max(a, b, c);
@@ -61,7 +61,7 @@ export class Circle implements Figure {
     this.radius = radius;
 
     if (radius <= 0) {
-      throw new Error('radius must be > 0');
+      throw new Error('Radius must be greater than 0');
     }
   }
 
@@ -85,7 +85,7 @@ export class Rectangle implements Figure {
     this.height = height;
 
     if (width <= 0 || height <= 0) {
-      throw new Error('width and height must be > 0');
+      throw new Error('Radius must be greater than 0');
     }
   }
 
